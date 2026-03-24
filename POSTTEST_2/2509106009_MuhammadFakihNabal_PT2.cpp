@@ -88,7 +88,7 @@ void tambahData(Hewan* arr, int &n) {      //pointer (&) syarat 2
         for (int i = 0; i < n; i++) {
             if ((arr + i)->id == idBaru) {
                 cout << "ID " << idBaru << " sudah digunakan oleh hewan '" << (arr + i)->nama << endl;
-                cout << "Silakan masukkan ID lain\n" << endl;
+                cout << "Masukkan ID lain\n" << endl;
                 duplikat = true;
                 break;
             }
@@ -152,17 +152,17 @@ void linierSearch(Hewan* arr, int n, string target) {
 // ==============================================================================
 // Proses iterasi linier search:
 
-// 1. Ambil data nama pada indeks ke-i.
-// 2. Bandingkan satu per satu dengan nama target.
+// 1. Ambil data nama pada indeks ke-i
+// 2. Bandingkan satu per satu dengan nama target
 // 3. Jika cocok, maka data ditemukan dan loop dihentikan 
-// 4. Jika tidak cocok, lanjut ke indeks i + 1.
+// 4. Jika tidak cocok, lanjut ke indeks i + 1
 
 // Contoh
 
 // Masukkan nama hewan: sky
-// Iterasi ke-1: Memeriksa nama 'yanto'... (Bukan ini)
-// Iterasi ke-2: Memeriksa nama 'hamud'... (Bukan ini)
-// Iterasi ke-3: Memeriksa nama 'sky'... (KETEMU!)
+// Iterasi ke-1: Memeriksa nama yanto (bukan ini)
+// Iterasi ke-2: Memeriksa nama hamud (bukan ini)
+// Iterasi ke-3: Memeriksa nama sky (ketemu)
 // Ketemu ID: 305 | Jenis: Anjing
 // ==============================================================================
 
@@ -192,7 +192,7 @@ void fibonacci(Hewan* arr, int n, int target) {
         } else if (arr[i].id > target) {
             fibM = fibM2; fibM1 = fibM1 - fibM2; fibM2 = fibM - fibM1;
         } else {
-            cout << "ID ditemukan Nama: " << arr[i].nama << endl;
+            cout << "ID ditemukan nama: " << arr[i].nama << endl;
             return;
         }
     }
