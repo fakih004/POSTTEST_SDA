@@ -5,7 +5,6 @@ using namespace std;
 
 const int MAX = 50;
 
-// --- STRUKTUR DATA DASAR ---
 struct Hewan {
     int id;
     string nama;
